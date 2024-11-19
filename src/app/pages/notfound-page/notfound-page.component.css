@@ -1,0 +1,10 @@
+.blue-shadow {
+  box-shadow: 0 4px 8px rgba(0, 0, 255, 0.2);
+  transition: box-shadow 0.3s ease-in-out;
+}
+.btn-blue {
+  background-color: rgba(0, 0, 255, 1);
+}
+.text-blue {
+  color: rgba(0, 0, 255, 1);
+}

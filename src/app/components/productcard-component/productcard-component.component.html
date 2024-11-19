@@ -1,0 +1,30 @@
+<div class="card blue-shadow">
+  <img [src]="img" class="card-img-top" style="height: 300px" alt="..." />
+  <div class="card-body py-2">
+    <h5 class="card-title">{{ title }}</h5>
+    <h5 class="card-title">{{ price }}$</h5>
+    <div class="py-2">
+      <a href="#" class="btn btn-blue text-light" [routerLink]="['/', id]">
+        View Product
+      </a>
+    </div>
+
+    <p class="py-2">
+      <button
+        class="btn btn-blue text-light"
+        type="button"
+        data-bs-toggle="collapse"
+        [attr.data-bs-target]="'#collapseExample' + id"
+        aria-expanded="false"
+        [attr.aria-controls]="'collapseExample' + id"
+      >
+        View Description
+      </button>
+    </p>
+    <div class="collapse mt-3" [attr.id]="'collapseExample' + id">
+      <div class="card card-body">
+        {{ description }}
+      </div>
+    </div>
+  </div>
+</div>

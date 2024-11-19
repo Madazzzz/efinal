@@ -1,0 +1,11 @@
+.bg-body-gradient {
+  --bs-bg-opacity: 1;
+  background-color: rgb(65, 125, 245) !important;
+}
+.blue-shadow {
+  box-shadow: 0 4px 8px rgba(0, 0, 255, 0.2);
+  transition: box-shadow 0.3s ease-in-out;
+}
+.bg-blue {
+  background-color: rgba(0, 0, 255, 1);
+}

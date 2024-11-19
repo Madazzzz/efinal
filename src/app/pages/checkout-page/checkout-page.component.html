@@ -1,0 +1,51 @@
+<div class="container">
+  <h2>Checkout</h2>
+  <div class="row">
+    <div class="col-md-8">
+      <form (ngSubmit)="submitOrder()">
+        <div class="mb-3">
+          <label for="name" class="form-label">Full Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="name"
+            [(ngModel)]="checkoutForm.name"
+            name="name"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="address" class="form-label">Address</label>
+          <input
+            type="text"
+            class="form-control"
+            id="address"
+            [(ngModel)]="checkoutForm.address"
+            name="address"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="cardNumber" class="form-label">Card Number</label>
+          <input
+            type="text"
+            class="form-control"
+            id="cardNumber"
+            [(ngModel)]="checkoutForm.cardNumber"
+            name="cardNumber"
+            required
+          />
+        </div>
+        <button type="submit" class="btn btn-blue text-light">
+          Submit Order
+        </button>
+      </form>
+    </div>
+    <div class="col-md-4">
+      <div class="border p-3 bg-light">
+        <h4>Order Summary</h4>
+        <p><strong>Total Price: </strong>{{ cartTotal }}$</p>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,6 @@
+.blue-shadow {
+  box-shadow: 16px 16px 15px rgba(0, 0, 255, 0.2);
+}
+.bg-blue {
+  background-color: rgba(0, 0, 255, 1);
+}

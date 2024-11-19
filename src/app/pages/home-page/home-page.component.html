@@ -1,0 +1,67 @@
+<div class="container-fluid py-4">
+  <div class="row">
+    <div class="col-12 col-md-6 col-lg-2 my-3">
+      <div class="dropdown">
+        <button
+          class="btn btn-lg dropdown-toggle rounded-pill"
+          type="button"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          Categories
+        </button>
+        <ul class="dropdown-menu w-75 text-center">
+          <li>
+            <a class="dropdown-item" (click)="filterProducts('men\'s clothing')"
+              >Men's Clothing</a
+            >
+          </li>
+          <li><hr class="dropdown-divider" /></li>
+          <li>
+            <a
+              class="dropdown-item"
+              (click)="filterProducts('women\'s clothing')"
+              >Women's Clothing</a
+            >
+          </li>
+          <li><hr class="dropdown-divider" /></li>
+          <li>
+            <a class="dropdown-item" (click)="filterProducts('jewelery')"
+              >Jewelery</a
+            >
+          </li>
+          <li><hr class="dropdown-divider" /></li>
+          <li>
+            <a class="dropdown-item" (click)="filterProducts('electronics')"
+              >Electronics</a
+            >
+          </li>
+          <li><hr class="dropdown-divider" /></li>
+          <li>
+            <a class="dropdown-item" (click)="filterProducts('')"
+              >All Categories</a
+            >
+          </li>
+          <!-- filter -->
+        </ul>
+      </div>
+    </div>
+    <div class="col-lg-10 col-12">
+      <div class="row g-4">
+        <div
+          *ngFor="let product of filteredProducts"
+          class="col-12 col-md-6 col-lg-4"
+        >
+          <app-productcard-component
+            [img]="product.image"
+            [title]="product.title"
+            [price]="product.price"
+            [id]="product.id"
+            [description]="product.description"
+          >
+          </app-productcard-component>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

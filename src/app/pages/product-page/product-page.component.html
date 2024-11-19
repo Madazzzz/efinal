@@ -1,0 +1,31 @@
+<div class="container py-3" *ngIf="!loading; else loadingTemplate">
+  <div class="row">
+    <div class="col-12 col-md-6 col-lg-6">
+      <img
+        [src]="product?.image"
+        alt="{{ product?.title }}"
+        style="height: 550px; width: 500px"
+        *ngIf="product?.image"
+      />
+    </div>
+    <div class="col-12 col-md-4 col-lg-6">
+      <div class="blue-shadow p-4 mb-5 rounded bg-blue text-white">
+        <h2>Product Name:</h2>
+        <p style="font-size: 25px">{{ product?.title }}</p>
+        <h2>Description:</h2>
+        <p style="font-size: 20px">{{ product?.description }}</p>
+        <h2>Price:</h2>
+        <p style="font-size: 25px">{{ product?.price }}$</p>
+        <button class="btn btn-light rounded-4" (click)="addToCart()">
+          Add To Cart
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<ng-template #loadingTemplate>
+  <div class="text-center">
+    <h2>Loading product details...</h2>
+  </div>
+</ng-template>

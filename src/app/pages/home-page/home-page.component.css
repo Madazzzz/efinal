@@ -1,0 +1,4 @@
+.btn-primary {
+  --bs-bg-opacity: 1;
+  background-color: rgb(65, 125, 245) !important;
+}

@@ -1,0 +1,16 @@
+.btn-primary {
+  --bs-bg-opacity: 1;
+  opacity: 1;
+  background-color: rgb(65, 125, 245) !important;
+}
+.blue-shadow {
+  box-shadow: 0 4px 8px rgba(0, 0, 255, 0.2);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.blue-shadow:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 255, 0.4);
+}
+.btn-blue {
+  background-color: rgba(0, 0, 255, 1);
+}

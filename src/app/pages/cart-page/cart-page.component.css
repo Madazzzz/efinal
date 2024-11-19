@@ -1,0 +1,14 @@
+div {
+  background-image: url(https://cdn-icons-png.flaticon.com/512/60/60992.png);
+  background-repeat: no-repeat, repeat;
+  background-position: center;
+  background-size: 400px;
+  min-height: 100vh;
+}
+.btn-blue {
+  background-color: rgba(0, 0, 255, 1);
+}
+.btn-primary {
+  --bs-bg-opacity: 1;
+  background-color: rgb(65, 125, 245) !important;
+}
